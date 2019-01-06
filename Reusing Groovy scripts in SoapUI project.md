@@ -50,7 +50,7 @@ testRunner.testCase.testSuite.project
 	.run(testRunner, context)
 ```
 
-In our case this initializes context property _UUID_, that could be used then in any following TestSteps of the TestCase (for example, as the value of _correlationId_ parameter in 'SOAP Request' TerstStep), in such way:
+In our case this initializes context property _UUID_ that could be used then in any following TestSteps of the TestCase (for example, as the value of _correlationId_ parameter in 'SOAP Request' TerstStep), in such way:
 
 ```xml
 <correlationId>${=context.UUID}</correlationId>
@@ -99,7 +99,7 @@ To access the class instance elsewhere within SoapUI TestSuite we can add the fo
 ```java
 def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
 def projectDir = groovyUtils.projectPath // Project path 
-def scriptDir = projectDir + "\\GroovyScript1.groovy" // Path to groovy script with class
+def scriptDir = projectDir + "\\GroovyScript1.groovy" // Path to groovy script
 
 evaluate (new File (scriptDir)) //Instantiate class 
 ```
