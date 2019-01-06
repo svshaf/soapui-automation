@@ -89,7 +89,7 @@ This script interrogates database for the first unused value of IP address, assi
 
 Connection to Oracle database requires installation of JDBC driver in SoapUI:
 
-* Download JDBC driver for your Oracle database version from [Oracle web] (https://www.oracle.com/technetwork/database/application-development/jdbc/downloads/index.html). For example, with Oracle Database 11.2.0.4 you can use the [ojdbc6.jar](https://www.oracle.com/technetwork/database/enterprise-edition/jdbc-112010-090769.html).
+* Download JDBC driver for your Oracle database version from [Oracle web](https://www.oracle.com/technetwork/database/application-development/jdbc/downloads/index.html). For example, with Oracle Database 11.2.0.4 you can use the [ojdbc6.jar](https://www.oracle.com/technetwork/database/enterprise-edition/jdbc-112010-090769.html).
 * Store the driver in \lib and bin\ext\ subdirectory of SoapUI installation directory, for example, on Windows with default installation copy driver to:
 C:\Program Files (x86)\SmartBear\SoapUI-5.4.0\lib\
 C:\Program Files (x86)\SmartBear\SoapUI-5.4.0\bin\ext\
