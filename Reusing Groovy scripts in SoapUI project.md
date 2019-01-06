@@ -92,7 +92,7 @@ class ScriptClass1 {
 context.setProperty("ScriptClass1", new ScriptClass1(log, context, runner))
 ```
 	
-This code contains the definition of the new Groovy class **ScriptClass1** with the method **UUID** that returns unique UUID value with prefix passed in input parameter of this method.  Then the new class instance is created and assigned to _ScriptClass1_ property of context to allow other scripts to reuse the class code. 
+This code contains the definition of the new Groovy class **ScriptClass1** with the method **UUID** that returns unique UUID value with prefix passed in input parameter of this method. Then the new class instance is created and assigned to _ScriptClass1_ property of context to allow other scripts to reuse the class code. 
 
 To access the class instance elsewhere within SoapUI TestSuite we can add the following code in TestSuite _Setup Script_:
 
@@ -104,7 +104,7 @@ def scriptDir = projectDir + "\\GroovyScript1.groovy" // Path to groovy script
 evaluate (new File (scriptDir)) //Instantiate class 
 ```
 
-The	n we can call the class method on created class instance (for example, to generate values of _correlationId_, _messageId_ parameters in 'SOAP Request' TestStep), in such way:
+Then we can call the class method on class instance stored in _ScriptClass1_ property of context, for example, call method **UUID** to generate values of _correlationId_, _messageId_ parameters in 'SOAP Request' TestStep:
 
 ```xml
 <correlationId>${=context.ScriptClass1.UUID('CorID-')}</correlationId>
