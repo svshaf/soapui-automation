@@ -46,7 +46,8 @@ In **InitScript1** we initialize context properties by invoking the appropriate 
 ```java
 testRunner.testCase.testSuite.project
 	.testSuites["ScriptLibrary"]
-	.testCases["Scripts"].testSteps["Script1"]
+	.testCases["Scripts"]
+	.testSteps["Script1"]
 	.run(testRunner, context)
 ```
 
