@@ -14,11 +14,11 @@ Create the new TestSuite named **ScriptLibrary** under the project, with the str
 	|-ScriptLibrary (TestSuite in disabled state)
 	  |-Scripts (TestCase in disabled state)
 		|-TestSteps
-		  |-Script1 ('Groovy Script' TestStep, that contain reusable code)
+		  |-Script1 ('Groovy Script' TestStep that contains reusable code)
 		  |-Script2 
 		| ...
 		
-Let’s suppose that we have to generate the unique UUID value for using in different Test Steps of our project (for example, as the _'correlationId'_ parameter of different 'SOAP Request' TestSteps).
+Let’s suppose that we have to generate the unique UUID value for using in different Test Steps of our project (for example, as the _'correlationId'_ parameter of 'SOAP Request' TestSteps).
 
 Add the following code in **Script1** under the **ScriptLibrary\Scripts**:
 
