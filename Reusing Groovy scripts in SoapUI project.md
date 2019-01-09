@@ -100,9 +100,9 @@ To access the class instance elsewhere within SoapUI TestSuite we can add the fo
 ```java
 def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
 def projectDir = groovyUtils.projectPath // Project path 
-def scriptDir = projectDir + "\\GroovyScript1.groovy" // Path to groovy script
+def scriptPath = projectDir + "\\GroovyScript1.groovy" // Path to groovy script
 
-evaluate (new File (scriptDir)) //Instantiate class 
+evaluate (new File (scriptPath)) //Instantiate class 
 ```
 
 Then we can call the class method on class instance stored in _ScriptClass1_ property of context, for example, call method **UUID** to generate values of _correlationId_, _messageId_ parameters in 'SOAP Request' TestStep:
