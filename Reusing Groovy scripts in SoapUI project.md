@@ -100,7 +100,7 @@ To access the class instance elsewhere within SoapUI TestSuite we can add the fo
 ```java
 def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
 def projectDir = groovyUtils.projectPath // Project path 
-def scriptPath = projectDir + "\\GroovyScript1.groovy" // Path to groovy script
+def scriptPath = projectDir + "\\ScriptLibrary\\GroovyScript1.groovy" // Path to groovy script
 
 evaluate (new File (scriptPath)) //Instantiate class and assign instance to 'ScriptClass1' property of context
 ```
