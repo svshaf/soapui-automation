@@ -57,6 +57,12 @@ In our case this initializes context property _UUID_ that could be used then in 
 <correlationId>${=context.UUID}</correlationId>
 ```	
 
+This expression will produce, for example, the following output: 
+
+```xml
+<correlationId>bfc92a49-0c5e-485c-a819-f8d124524885</correlationId>
+```
+
 ## Solution 2 – Reuse Groovy class
 
 If some function should be called multiple times within TestSuite, we can include it in new Groovy class, instantiate this class and call function code as a class method.
@@ -113,3 +119,10 @@ Then we can call the class method on class instance stored in _ScriptClass1_ pro
 <messageId>${=context.ScriptClass1.UUID('MsgID-')}</messageId>
 ```
 
+These expressions will produce, for example, the following output: 
+
+```xml
+<correlationId>CorID-6811b474-e7e7-4979-b169-02fe1893bb83</correlationId>
+
+<messageId>MsgID-d43207a8-dd1f-4c16-9e35-a45c0dd4dbfd</messageId>
+```
