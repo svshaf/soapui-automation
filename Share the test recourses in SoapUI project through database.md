@@ -3,7 +3,7 @@
 The task is to share the test resources (аor example: share IP address, phone numbers, card codes in allocated ranges, etc.) across test team members to assure that each resource will be used only once.
 
 One of the possible solutions is to use the database for resource sharing.
-Let's suppose that several testers need to generate the IP address from allocated range to use in SoupUI 'SOAP Request' TestStep. For simplicity, we assume that the "range" of IP addresses is configured by an initial value, which is incremented on each request.
+Suppose, several testers need to generate the IP address from allocated range to use in SoupUI 'SOAP Request' TestStep. For simplicity, we assume that the "range" of IP addresses is configured by an initial value, which is incremented on each request.
 
 The value of next available IP address is stored in Oracle database: table PROJECT contains root record for all project parameters, which are stored in table PARAMS, as shown on the diagram:
 
