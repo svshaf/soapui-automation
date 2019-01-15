@@ -18,7 +18,7 @@ Create the new TestSuite named **ScriptLibrary** under the project, with the str
 		  |-Script2 
 		| ...
 		
-Let’s suppose that we have to generate the unique [UUID](https://tools.ietf.org/rfc/rfc4122.txt) value for using in different Test Steps of our project (for example, as the _'correlationId'_ parameter of 'SOAP Request' TestSteps).
+Suppose, we need to generate the unique [UUID](https://tools.ietf.org/rfc/rfc4122.txt) value for using in different Test Steps of our project (for example, as the _'correlationId'_ parameter of 'SOAP Request' TestSteps).
 
 Add the following code in **Script1** under the **ScriptLibrary\Scripts**:
 
@@ -67,7 +67,7 @@ This expression will produce, for example, the following output:
 
 If some function should be called multiple times within TestSuite, we can include it in new Groovy class, instantiate this class and call function code as a class method.
 
-Let’s suppose that we have to generate several unique UUIDs with different prefixes as the values of the _correlationId_, _messageId_ parameters of 'SOAP Request' TestSteps.
+Suppose, several unique UUIDs with different prefixes should be generated as the values of the _correlationId_, _messageId_ parameters of 'SOAP Request' TestSteps.
 Create subdirectory **/ScriptLibrary** in current project directory and add there new file **GroovyScript1.groovy** with such content:
 
 ```java
