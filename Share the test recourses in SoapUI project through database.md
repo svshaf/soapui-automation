@@ -1,6 +1,6 @@
 # Share the test recourses in SoapUI project through database
 
-The task is to share the test resources (аor example: share IP address, phone numbers, card codes in allocated ranges, etc.) across test team members to assure that each resource will be used only once.
+The task is to share the test resources (for example: share IP address, phone numbers, card codes in allocated ranges, etc.) across test team members to assure that each resource will be used only once.
 
 One of the possible solutions is to use the database for resource sharing.
 Suppose, several testers need to generate the IP address from allocated range to use in SoupUI 'SOAP Request' TestStep. For simplicity, we assume that the "range" of IP addresses is configured by an initial value, which is incremented on each request.
